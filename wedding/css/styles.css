@@ -1,0 +1,219 @@
+
+.top {
+  background-color: #fbdff0;
+  padding-top: 200px;
+  height: 81.25rem;
+}
+
+
+.mid {
+  background-color: #f6c3e5;
+  padding-bottom: 60px;
+}
+
+
+
+.mid p {
+  font-size: 3rem;
+}
+
+
+
+
+
+.bottom {
+  background-color: #a278b5;
+
+}
+
+.bottom p {
+  font-size: 1rem;
+  padding-top: 2rem;
+}
+
+.bottom a {
+  color: #f6c3e5;
+  margin-top: 30px;
+}
+
+
+
+
+
+
+.profile {
+  padding-top: 2.5rem;
+}
+
+.profile img {
+  max-width: 20rem;
+  border-radius: 10rem;
+  height:auto;
+  margin:auto;
+}
+
+
+
+.contact-me {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+
+
+.cloudtop {
+  position: absolute;
+  left: 300px;
+  top: -90px;
+
+}
+
+
+.cloudbottom {
+  position: absolute;
+  max-width: 15rem;
+  height: auto;
+  top: 400px;
+  right: 470px;
+  transform: scaleX(-1);
+
+}
+
+.diamond {
+  padding-top: 2.5rem;
+  max-width:25rem;
+  height:auto;
+  position: relative;
+  margin: auto;
+}
+
+
+
+
+.skills {
+padding: 3rem;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 2.5rem auto 5rem auto;
+  text-align: left;
+  padding-bottom: 2rem;
+  bottom:30px;
+}
+
+.skill-row p {
+  padding-top: 0.5rem;
+}
+
+
+
+.time {
+  max-width: 40rem;
+  height: auto;
+  float: right;
+  margin-top: 2rem;
+  border-radius: 10rem;
+}
+
+.where {
+  max-width: 20rem;
+  height: auto;
+  float: left;
+  margin-right: 2rem;
+}
+
+
+.btn {
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	background-color:#3d94f6;
+	border-radius:6px;
+	border:1px solid #337fed;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+  font-family: 'Quicksand', sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	background-color:#1e62d0;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.copyright {
+  color: black;
+  font-size: 1.3rem;
+}
+
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  text-align: center;
+  display: block;
+  color: #381460;
+  line-height: 1.5;
+}
+
+div {
+  margin: auto;
+  position: relative;
+  float: none;
+  height: auto;
+  display: block;
+}
+
+
+p {
+  font-family: 'Zhi Mang Xing', cursive;
+  font-size: 4rem;
+  padding-top: 5rem;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+
+a {
+  color: #11999E;
+  top: 40px;
+  font-size: 2rem;
+  margin: 0 30px 0 30px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+h1 {
+
+  display: inline-block;
+  font-size:7rem;
+  font-family: 'Quicksand', sans-serif;
+  position: relative;
+}
+
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width:10%;
+  margin: 100px auto 100px auto;
+ }

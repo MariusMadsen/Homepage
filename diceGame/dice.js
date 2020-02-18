@@ -1,25 +1,9 @@
 var randomNumber1 = Math.floor(Math.random()*6+1);
 var randomNumber2 = Math.floor(Math.random()*6+1);
 
-function setDice(number, tag) {
-  if(number === 1) {
-    document.querySelector(tag).src = "diceGameImages/dice1.png";
-
-  } else if (number === 2) {
-    document.querySelector(tag).src = "diceGameImages/dice2.png";
-
-  } else if (number === 3) {
-    document.querySelector(tag).src = "diceGameImages/dice3.png";
-
-  } else if (number === 4) {
-    document.querySelector(tag).src = "diceGameImages/dice4.png";
-
-  } else if (number === 5) {
-    document.querySelector(tag).src = "diceGameImages/dice5.png";
-
-  } else {
-    document.querySelector(tag).src = "diceGameImages/dice6.png";
-  }
+function setDice(nr, tag){
+  var path = "diceGameImages/dice"+nr+".png"
+  document.querySelector(tag).src = path;
 }
 
 function declareWinner(nr1, nr2) {
