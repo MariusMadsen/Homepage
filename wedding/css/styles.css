@@ -111,7 +111,7 @@ padding: 3rem;
   height: auto;
   float: right;
   margin-top: 2rem;
-  border-radius: 100
+  border-radius: 100%
 }
 
 .where {
@@ -120,6 +120,7 @@ padding: 3rem;
   float: left;
   margin-right: 2rem;
 }
+
 .wheredesc {
 }
 
