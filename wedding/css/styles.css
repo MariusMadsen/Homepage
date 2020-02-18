@@ -106,21 +106,21 @@ padding: 3rem;
   padding-top: 0.5rem;
 }
 
-
-
 .time {
-  max-width: 40rem;
+  max-width: 20rem;
   height: auto;
   float: right;
   margin-top: 2rem;
-  border-radius: 10rem;
+  border-radius: 100
 }
 
 .where {
-  max-width: 20rem;
+  max-width: 15rem;
   height: auto;
   float: left;
   margin-right: 2rem;
+}
+.wheredesc {
 }
 
 
