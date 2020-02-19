@@ -67,7 +67,7 @@ function gameOver() {
   }, 200);
 
   $("h1").text("Game Over! Press Any Key to Restart");
-  startOver()
+  startOver();
 }
 
 function startOver() {
