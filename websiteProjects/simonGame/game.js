@@ -1,30 +1,34 @@
 
-$(document).keydown(nextSequence);
+$(document).keydown(nextSequence).click(nextSequence);
 var buttonColours = ["red", "blue", "green", "yellow"];
 var pattern = [];
 var userClickedPattern = [];
 var level = 0;
 var currenLevel = 0;
+var canPushButtons = false;
 
 $(".btn").click(function(event) {
-  var userChosenColor = event.target.id;
-  userClickedPattern.push(userChosenColor);
-  sound(userChosenColor);
-  animatePress(userChosenColor);
-  console.log(userClickedPattern);
-  checkAnswer(currenLevel);
+  if (canPushButtons) {
+    var userChosenColor = event.target.id;
+    userClickedPattern.push(userChosenColor);
+    sound(userChosenColor);
+    animatePress(userChosenColor);
+    console.log(userClickedPattern);
+    checkAnswer(currenLevel);
+  }
 });
 
 
 function nextSequence() {
+  $(document).off("keydown").off("click");
   userClickedPattern = [];
   updateHeader(++level);
-  $(document).off("keydown");
   var nr =  Math.floor(Math.random()*4);
   var randomChosenColour = buttonColours[nr];
   pattern.push(randomChosenColour);
   $("#"+randomChosenColour).fadeOut(100).fadeIn(100);
   sound(randomChosenColour);
+  flip(true);
 }
 
 function sound(randomChosenColour) {
@@ -66,13 +70,18 @@ function gameOver() {
     body.removeClass("game-over");
   }, 200);
 
-  $("h1").text("Game Over! Press Any Key to Restart");
-  startOver();
+  $("h1").text("Game Over! Press Any Key or Touch Screen to Restart");
+  flip(false);
+  setTimeout(startOver, 100);
 }
 
 function startOver() {
   level = 0;
   pattern = [];
   currenLevel = 0;
-  $(document).keydown(nextSequence);
+  $(document).keydown(nextSequence).click(nextSequence);
+}
+
+function flip(val){
+  canPushButtons = val;
 }
